@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+a{
+text-decoration: none;
+}
+input{
+    border: 1px solid #dedddf;
+    background-color: hsl(189, 41%, 97%);
+}
+.loc-solid{
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+}
+input:focus{
+    outline: none;
+    border:  1px solid blue;
+    transition: 4s;
+    }
+.circle p{
+    line-height: 27px;
+    text-align: center;
+    font-size: 20px;
+}
+.info{
+    display: flex;
+    gap: 1rem;
+}
+.bills-container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+.header h1{
+    text-align: center;
+}
+.header-pics{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.credit,
+.pay-credit{
+    width: 100px;
+    cursor: pointer;
+}
+.pics,
+.pics1{
+    text-align: center;
+    font-size: 12px;
+}
+.input-container{
+    position: relative;
+    margin-top: .1rem;
+    margin-bottom: 2.5rem;
+}
+form{
+    padding-top: 2rem;
+}
+label{
+    text-transform: uppercase;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: -1rem;
+}
+.input{
+    width: 100%;
+    padding: .4rem 1rem;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    border: 1px solid #dedddf;
+}
+#flex{
+    display: flex;
+ gap: 1rem;
+ position: relative;
+}
+.code{
+    position: relative;
+}
+.code label{
+    position: absolute;
+}
+.input-comt{
+    padding: .4rem 1rem;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    border: 1px solid #dedddf;
+   
+}
+.phase2{
+    margin-top: 2.1rem;
+}
+
+.form-input{
+     width: 100%;
+    padding: .4rem 1rem;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    border: 1px solid #dedddf;
+   
+}
+.input-year{
+    padding: .4rem 1rem;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    border: 1px solid #dedddf;
+   
+}
+.proceed{
+    background-color: #ff7d1a;
+    color: white;
+    padding: 2.5vh 3vw;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+}
+.proceed:hover{
+    border: 1px solid  #ff7d1a;
+    color: white;
+    
+}
+
+/* Paypal */
+  .form-structure{
+    display: none;
+    margin-top: 3rem;
+}  
+.form-structure h1{
+    text-align: center;
+}
+
+.paypal-section{
+  display: flex;
+  justify-content: center;
+}
+.input-flex{
+    display: flex;
+    justify-content: center;
+}
+.loc-paypal{
+    position: absolute;
+    right: 6rem;
+    top: .5rem;
+}
+.pal{
+    width: 80%;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    letter-spacing: .5px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+}
+.pal1{
+    width: 50%;
+    padding: .3rem 1rem;
+    border-radius: 5px;
+}
+.payment{
+    padding: .9vw 4vh;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+background-color: #ff7d1a;
+border-radius: 5px;
+}
+.payment:hover{
+    transform: scale(.9);
+    transition: 1s;
+}
+
+
+/* error message */
+small{
+    color: red;
+}
+
+  .input-container.inner.error input{
+    border-color: red;
+}
+
+
+.input-container.inner.success input{
+    border-color: blue;
+}
+
+.input-container.inner.error small{
+    color: red;
+    visibility: visible;
+}
+
+.input-container small{
+    font-size: 14px;
+     visibility: hidden; 
+     position: absolute;
+     left: 0;
+     bottom: -1rem;
+}
+/* confirm */
+.reload{
+    margin-top: 1rem;
+}
+.con-container{
+    text-align: center;
+      display: none;  
+}
+.gif-image{
+    width: 150px;
+    margin-left: 5rem;
+}
+.shopping{
+    padding: .9vw 4vh;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+background-color: #ff7d1a;
+border-radius: 5px;
+}
+.shopping:hover{
+    transform: scale(.9);
+    transition: 1s;
+}
+@media screen and (max-width: 820px){
+
+    .bills-container{
+        display: block;
+    }
+    .input{
+        width: 80%;
+        padding: .4rem 1rem;
+        border-radius: 3px;
+        letter-spacing: .5px;
+        outline: none;
+        background-color: hsl(189, 41%, 97%);
+        border: 1px solid #dedddf;
+    }
+    .input-container{
+        margin-left: 2rem;
+    }
+    .info{
+       margin-left: 2rem;
+    }
+    .form-input{
+        width: 80%;
+       padding: .4rem 1rem;
+       border-radius: 3px;
+       letter-spacing: .5px;
+       outline: none;
+       background-color: hsl(189, 41%, 97%);
+       border: 1px solid #dedddf;
+   }
+   .container{
+    margin-left: 2rem;
+   }
+   .proceed{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 2.5vh 30vw;
+   }
+   .shopping{
+    padding: 2vw 4vh;
+}
+.payment{
+    padding: 3vw 15vh;
+}
+}
+@media screen and (max-width: 768px){
+    .input-container{
+        margin-bottom: 3rem;
+    }
+    .loc-solid{
+        position: absolute;
+        right: 11rem;
+        top: .5rem;
+    }
+    .input-container small{
+        font-size: 14px;
+         visibility: hidden; 
+          position: absolute;
+         left: 0;
+         bottom: -1rem; 
+    }
+   
+   
+    .input{
+        width: 80%;
+        padding: .4rem 1rem;
+        border-radius: 3px;
+        letter-spacing: .5px;
+        outline: none;
+        background-color: hsl(189, 41%, 97%);
+        border: 1px solid #dedddf;
+    }
+    .input-container{
+        margin-left: 2rem;
+    }
+    .info{
+       margin-left: 2rem;
+    }
+    .form-input{
+        width: 80%;
+       padding: .4rem 1rem;
+       border-radius: 3px;
+       letter-spacing: .5px;
+       outline: none;
+       background-color: hsl(189, 41%, 97%);
+       border: 1px solid #dedddf;
+   }
+   .container{
+    margin-left: 2rem;
+   }
+   .btn-return{
+    display: none;
+   }
+   .buttons .btn{
+    display: block;
+   }
+   .buttons{
+    margin-left: 2rem;
+   }
+   .proceed{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 2.5vh 30vw;
+   }
+   .form-structure h1{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   }
+   .payment{
+    padding: 3vw 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+.shopping{
+    padding: 2vw 4vh;
+}
+}
+
+@media screen and (max-width: 425px) {
+    .loc-solid{
+        position: absolute;
+        right: 6.5rem;
+        top: .5rem;
+    }
+.input-comt{
+    width: 70%;
+}
+.input-container .code{
+    position: relative;
+    right: 1.5rem;
+}
+.input-year{
+    width: 70%;
+}
+.container .year{
+    position: relative;
+    right: 1rem;
+}
+.buttons .btn{
+    font-size: 10px;
+}
+.payment{
+    padding: 4vw 13vh;
+}
+.shopping{
+    padding: 3vw 4vh;
+}
+}
+
+@media screen and (max-width: 375px) {
+.header h1{
+    font-size: 20px;
+}   
+.header-pics{
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.payment{
+    padding: 4vw 13vh;
+}
+}
+
+
+@media screen and (max-width: 280px) {
+    .header h1{
+        font-size: 15px;
+    }   
+   .pics p{
+    font-size: 10px;
+   }
+    }
+    
+
